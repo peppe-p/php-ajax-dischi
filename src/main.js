@@ -1,7 +1,7 @@
 const app = new Vue({
     el: "#root",
     data: {
-        discList: "",
+        discList: null,
     },
 
     methods: {
@@ -9,11 +9,15 @@ const app = new Vue({
     },
 
     mounted() {
-        const url = "https://flynn.boolean.careers/exercises/api/array/music";
+        const url = "./dist/api/discs_api.php";
         axios
             .get(url)
             .then(info => {
-                this.discList = info.data.response;
+                console.log(info);
+                this.discList = info.data;
+            })
+            .catch(error => {
+                console.log(error);
             })
     }
 });

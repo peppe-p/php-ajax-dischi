@@ -10,15 +10,18 @@
 var app = new Vue({
   el: "#root",
   data: {
-    discList: ""
+    discList: null
   },
   methods: {},
   mounted: function mounted() {
     var _this = this;
 
-    var url = "https://flynn.boolean.careers/exercises/api/array/music";
+    var url = "./dist/api/discs_api.php";
     axios.get(url).then(function (info) {
-      _this.discList = info.data.response;
+      console.log(info);
+      _this.discList = info.data;
+    })["catch"](function (error) {
+      console.log(error);
     });
   }
 });

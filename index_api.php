@@ -1,6 +1,3 @@
-<?php
-require __DIR__ . './dist/db/discs.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,17 +16,14 @@ require __DIR__ . './dist/db/discs.php';
 
     <main id="root">
         <div class="discList">
-            <?php
-            foreach ($discs as $disc) {
-            ?><div class="disc">
-                <img class="poster" src="<?= $disc["poster"] ?>" alt="">
-                <h2><?= $disc["title"] ?></h2>
-                <h4><?= $disc["author"] ?></h4>
-                <h4><?= $disc["year"] ?></h4>
+
+            <div class="disc" v-for="disc in discList">
+                <img class="poster" src="" alt="">
+                <h2></h2>
+                <h4></h4>
+                <h4></h4>
             </div>
-            <?php
-            }
-            ?>
+
         </div>
     </main>
 
