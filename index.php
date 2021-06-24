@@ -8,7 +8,6 @@ require __DIR__ . './dist/db/discs.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <link rel="stylesheet" href="./dist/css/style.css">
     <title>Spotify - Dischi</title>
 </head>
@@ -33,10 +32,6 @@ require __DIR__ . './dist/db/discs.php';
             ?>
         </div>
     </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./dist/js/main.js"></script>
 </body>
 
 </html>
