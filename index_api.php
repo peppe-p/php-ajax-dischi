@@ -18,10 +18,10 @@
         <div class="discList">
 
             <div class="disc" v-for="disc in discList">
-                <img class="poster" src="" alt="">
-                <h2></h2>
-                <h4></h4>
-                <h4></h4>
+                <img class="poster" :src="disc.poster" alt="">
+                <h2>{{disc.title}}</h2>
+                <h4>{{disc.author}}</h4>
+                <h4>{{disc.year}}</h4>
             </div>
 
         </div>
